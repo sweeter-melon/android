@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/main_toolbar_menu_today"
+            android:icon="@mipmap/ic_today_white"
+            android:title="@string/menu_today"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/main_toolbar_menu_plan"
+            android:icon="@mipmap/ic_plan_white"
+            android:title="@string/menu_plan"
+            app:showAsAction="always"/>
+
+    </group>
+
+</menu>

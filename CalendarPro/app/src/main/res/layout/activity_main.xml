@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/themeColor"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:theme="@style/AlertDialog.AppCompat.Light">
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@mipmap/ic_shadow"/>
+
+        <FrameLayout
+            android:id="@+id/main_center_layout"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/layout_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/themeColor">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_left_today"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background_for_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_today_gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/today"
+                android:textColor="@color/color_for_text_in_item"
+                android:textSize="@dimen/item_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_left_day"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background_for_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_day" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/day"
+                android:textColor="@color/color_for_text_in_item"
+                android:textSize="@dimen/item_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_left_week"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background_for_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_week" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/week"
+                android:textColor="@color/color_for_text_in_item"
+                android:textSize="@dimen/item_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_left_month"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background_for_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_month" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/month"
+                android:textColor="@color/color_for_text_in_item"
+                android:textSize="@dimen/item_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_left_year"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/background_for_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_year" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/year"
+                android:textColor="@color/color_for_text_in_item"
+                android:textSize="@dimen/item_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_left_plan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/background_for_item"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_plan"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/plan"
+                android:textColor="@color/color_for_text_in_item"
+                android:textSize="@dimen/item_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</LinearLayout>-->
+
+</android.support.v4.widget.DrawerLayout>
