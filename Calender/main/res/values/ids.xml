@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="view_tag_01">0</item>
+    <item type="id" name="view_tag_02">1</item>
+    <item type="id" name="view_tag_03">2</item>
+
+</resources>

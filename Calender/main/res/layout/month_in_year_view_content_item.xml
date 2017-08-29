@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mryhc.app.calendar.ui.custom.CustomDayOfMonthInYearView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    app:day_text="15"
+    app:busy_flag="busy01"
+    app:today_flag="true">
+
+</com.mryhc.app.calendar.ui.custom.CustomDayOfMonthInYearView>

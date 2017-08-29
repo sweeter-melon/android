@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_back"
+    android:orientation="vertical"
+    tools:context="com.mryhc.app.calendar.ui.activity.SettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/setting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/themeColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:theme="@style/AlertDialog.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_week_start"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"/>
+
+        <RadioGroup
+            android:id="@+id/setting_radio_group"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@drawable/week_start_item_parent_back"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/setting_radio_monday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@drawable/week_start_radio_background"
+                android:layout_height="match_parent"
+                android:text="@string/setting_week_start_1"
+                android:gravity="center"
+                android:textColor="@color/week_start_radio_text_color"/>
+
+            <RadioButton
+                android:id="@+id/setting_radio_sunday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@drawable/week_start_radio_background"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/setting_week_start_7"
+                android:textColor="@color/week_start_radio_text_color"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/show_week_num"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"/>
+
+        <Switch
+            android:id="@+id/setting_show_week_num_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

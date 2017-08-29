@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mryhc.app.calendar.ui.custom.CustomWeekDayView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_week_day_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    app:week_num="星期日"
+    app:week_date="2017年7月9日"
+    app:week_num_text_size="16sp"
+    app:week_date_text_size="14sp"
+    app:week_bar_height="22dp"
+    app:week_date_back_color="@color/week_cur_date_back_color"
+    app:week_num_back_color="@color/week_cur_num_back_color"
+    app:week_bar_back_color="@color/week_bar_back_color">
+
+</com.mryhc.app.calendar.ui.custom.CustomWeekDayView>

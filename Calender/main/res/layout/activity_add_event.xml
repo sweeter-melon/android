@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_add_event_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/themeColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:theme="@style/AlertDialog.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/add_event"
+                android:textSize="22sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/add_event_ok"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_ok_white"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_base_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="事件内容"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/add_event_et_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/transparent"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@drawable/edit_text_cursor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px001"
+                android:background="@color/md_grey_300" />
+
+            <LinearLayout
+                android:id="@+id/add_event_ll_start"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_for_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="起始时间" />
+
+                <TextView
+                    android:id="@+id/add_event_tv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="2017/7/30"
+                    android:textColor="@color/event_base_color" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px001"
+                android:background="@color/md_grey_300" />
+
+            <LinearLayout
+                android:id="@+id/add_event_ll_end"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_for_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="截止时间" />
+
+                <TextView
+                    android:id="@+id/add_event_tv_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="2017/7/30"
+                    android:textColor="@color/event_base_color" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px001"
+                android:background="@color/md_grey_300" />
+
+            <LinearLayout
+                android:id="@+id/add_event_ll_all_day"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_for_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:text="全天事件" />
+
+                <Switch
+                    android:id="@+id/add_event_switch_all_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px001"
+                android:background="@color/md_grey_300" />
+
+            <LinearLayout
+                android:id="@+id/add_event_ll_color"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_for_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:text="主题颜色" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/add_event_iv_color"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@color/event_base_color" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px001"
+                android:background="@color/md_grey_300" />
+
+            <LinearLayout
+                android:id="@+id/add_event_ll_desc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_for_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:text="添加描述" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/arrow_right_theme" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px001"
+                android:background="@color/md_grey_300" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

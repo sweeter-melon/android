@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_text_size">17sp</dimen>
+    <dimen name="dialog_item_text_size">16sp</dimen>
+    <dimen name="px001">1px</dimen>
+    <dimen name="px002">2px</dimen>
+    <dimen name="px003">3px</dimen>
+    <dimen name="px005">5px</dimen>
+    <dimen name="px010">10px</dimen>
+</resources>
